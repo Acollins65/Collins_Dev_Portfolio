@@ -1,7 +1,7 @@
 @import "../../vars.css";
 
 .container {
-  height: 100vh;
+  height: 90vh;
   margin: 0;
   padding: 10px 0;
   background-image: url("/assets/hero-bg.png");
