@@ -1,0 +1,21 @@
+:root {
+  /* Colours */
+  --color-text-primary: #feffe3;
+  --color-text-secondary: #989d95;
+  --color-background: #04152d;
+
+  /* Fonts weight */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-semibold: 600;
+
+  /* Fonts size */
+  --font-size-h1: 6rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.25rem;
+  --font-size-body: 1rem;
+}

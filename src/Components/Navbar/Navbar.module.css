@@ -1,0 +1,35 @@
+@import "../../vars.css";
+
+.container {
+  background-color: red;
+  height: auto;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  color: var(--color-text-primary);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-regular);
+  line-height: 1rem;
+}
+
+.menuItems {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.menuItems a {
+  color: var(--color-text-primary);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1rem;
+}
