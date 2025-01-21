@@ -20,7 +20,7 @@
 .menuItems {
   display: flex;
   flex-direction: row;
-  gap: 1.25rem;
+  gap: var(--nav-gap-lg);
   align-items: center;
   justify-content: center;
   padding: 0;
@@ -32,4 +32,31 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .menuItems {
+    display: none;
+  }
+
+  .menuItemsSmall {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--nav-gap-sm);
+  }
+
+  .menuItemsSmall li {
+    list-style-type: none;
+    padding: 12px;
+    width: 100vw;
+    border: 1px solid var(--color-text-primary);
+    background-color: rgb(3, 3, 3);
+  }
+
+  .menuItemsSmall li a {
+    color: var(--color-text-primary);
+    font-size: var(--font-size-body);
+  }
 }

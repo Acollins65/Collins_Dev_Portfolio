@@ -18,4 +18,7 @@
   --font-size-h2: 2rem;
   --font-size-h3: 1.25rem;
   --font-size-body: 1rem;
+
+  --nav-gap-lg: 1.25rem;
+  --nav-gap-sm: 0.25rem;
 }

@@ -26,9 +26,6 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
-      </div>
-      <div className={styles.menuSmall}>
-        <div className={styles.menuBtn}></div>
         <ul className={styles.menuItemsSmall}>
           <li>
             <a href="/">Home</a>
