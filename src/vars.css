@@ -20,5 +20,7 @@
   --font-size-body: 1rem;
 
   --nav-gap-lg: 1.25rem;
-  --nav-gap-sm: 0.25rem;
+  --nav-gap-sm: 0.5rem;
+
+  --border-radius: 0.5rem;
 }
