@@ -3,6 +3,8 @@
 .container {
   height: 50px;
   width: 100%;
+  position: relative;
+  border-bottom: 1px solid var(--color-text-primary);
 }
 .navbar {
   display: flex;
@@ -19,7 +21,9 @@
   font-weight: var(--font-weight-regular);
   line-height: 1rem;
 }
-
+.menuBtn {
+  display: none;
+}
 .menuItems {
   display: flex;
   flex-direction: row;
@@ -36,6 +40,7 @@
   font-weight: 400;
   line-height: 1rem;
 }
+
 @media screen and (max-width: 768px) {
   .navbar {
     display: flex;
@@ -43,19 +48,22 @@
     justify-content: space-between;
     align-items: center;
   }
-  .menuItems {
+  .menuBtn {
+    display: block;
+    cursor: pointer;
   }
-
-  .menuItemsSmall {
+  .menu {
     position: absolute;
     left: 0;
-    top: 100px;
+    top: 50px;
+    width: 100%;
+    height: 100vh;
+    background-color: #00800055;
+  }
+  .menuItemsSmall {
     z-index: 100;
     display: flex;
-    width: 100%;
-    background-color: rgb(188, 188, 28);
     flex-direction: column;
-
     gap: var(--nav-gap-sm);
   }
 
@@ -63,9 +71,7 @@
     list-style-type: none;
     padding: 12px;
     width: 100%;
-    border: 1px solid var(--color-text-primary);
-    background-color: rgb(3, 3, 3);
-    border-radius: var(--border-radius);
+    border-bottom: 1px solid var(--color-text-primary);
   }
 
   .menuItemsSmall li a {

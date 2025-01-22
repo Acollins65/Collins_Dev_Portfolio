@@ -10,7 +10,6 @@ export const Navbar = () => {
           Collins.Dev
         </a>
         <div className={styles.menu}>
-          <div className={styles.menuBtn}></div>
           <ul className={`${styles.menuItems} ${styles.menuItemsSmall}`}>
             <li>
               <a href="/">Home</a>
@@ -26,6 +25,11 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
+        <img
+          className={styles.menuBtn}
+          src={getImageUrl("nav/menuIcon.png")}
+          alt="menu_button"
+        />
       </div>
     </nav>
   );
