@@ -11,7 +11,7 @@ export const Navbar = () => {
         </a>
         <div className={styles.menu}>
           <div className={styles.menuBtn}></div>
-          <ul className={styles.menuItems}>
+          <ul className={`${styles.menuItems} ${styles.menuItemsSmall}`}>
             <li>
               <a href="/">Home</a>
             </li>
@@ -26,7 +26,7 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className={styles.navMobile}>
+        {/* <div className={styles.navMobile}>
           <ul className={styles.menuItemsSmall}>
             <li>
               <a href="/">Home</a>
@@ -41,7 +41,7 @@ export const Navbar = () => {
               <a href="#ContactMe">Contact me</a>
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </nav>
   );

@@ -1,13 +1,16 @@
 @import "../../vars.css";
 
 .container {
-  background-color: #e61f40;
-  height: auto;
+  height: 100px;
+  background-color: green;
 }
 .navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
 }
 
 .logo {
@@ -26,9 +29,6 @@
   padding: 0;
   margin: 0;
 }
-.menuItemsSmall {
-  display: none;
-}
 
 .menuItems a {
   color: var(--color-text-primary);
@@ -40,20 +40,22 @@
   .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
   .menuItems {
-    display: none;
   }
 
   .menuItemsSmall {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    z-index: 100;
     display: flex;
-    width: 200vw;
-    background-color: yellow;
+    width: 100%;
+    background-color: rgb(188, 188, 28);
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
     gap: var(--nav-gap-sm);
   }
 
@@ -68,6 +70,6 @@
 
   .menuItemsSmall li a {
     color: var(--color-text-primary);
-    font-size: 22px;
+    font-size: 1rem;
   }
 }
