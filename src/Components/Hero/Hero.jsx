@@ -9,7 +9,7 @@ export const Hero = () => {
           <div>
             <h1>User</h1>
           </div>
-          <div>
+          <div className={styles.roundedBoarder}>
             <h3>👋 Hello,I,m Collins</h3>
           </div>
         </div>
@@ -33,7 +33,7 @@ export const Hero = () => {
           <div>
             <h1> & Developer</h1>
           </div>
-          <div className={styles.contact}>
+          <div className={styles.roundedBoarder}>
             <h3>Contact me</h3>
           </div>
         </div>
