@@ -1,49 +1,35 @@
 @import "../../vars.css";
 
 .container {
-  height: 100vh;
-  margin: 0;
-  padding: 10px 0;
-  background-image: url("/assets/hero-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+  border: 1px solid var(--color-text-primary);
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 226px;
 }
+
 .content {
+  background-color: green;
+  width: 100%;
+}
+.contentRows {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
-  color: var(--color-text);
-
-  margin: 200px auto;
+  gap: 8px;
 }
 
-.contentDetails {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
+h1 {
+  font-size: var(--font-size-h1);
+  line-height: 5.5rem;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
 }
-.introduction {
-  display: flex;
-  gap: 16px;
-}
-.name {
-  font-size: 2.5rem;
-}
-
-.role {
-  font-size: 5.25rem;
-}
-
-.contactIcons {
-  display: flex;
-  gap: 15px;
-}
-
-.contactIcon {
-  height: 28px;
-  width: 28px;
+h2 {
+  font-size: var(--font-size-h2);
+  line-height: 2rem;
+  font-weight: var(--font-weight-semibold);
 }

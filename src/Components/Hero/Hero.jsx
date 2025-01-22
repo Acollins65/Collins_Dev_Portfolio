@@ -5,49 +5,44 @@ export const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <div className={styles.contentDetails}>
-          <div className={styles.introduction}>
-            <h1 className={styles.name}>Hi, I'm Collins</h1>
-            <img
-              src={getImageUrl("Hero/wave.png")}
-              alt="Wave Icon"
-              className="styles.waveIcon"
-            />
+        <div className={styles.contentRows}>
+          <div>
+            <h1>User</h1>
           </div>
-          <h2 className={styles.role}>Front-End Engineer</h2>
-          <p className={styles.description}>
-            I build accessible, pixel-perfect digital experiences for the web.
-          </p>
+          <div>
+            <h3>Hello,I,m Collins</h3>
+          </div>
         </div>
-        <div className={styles.contactIcons}>
-          <a href="#">
-            <img
-              src={getImageUrl("Hero/Linkedin.svg")}
-              alt="Linkedin"
-              className={styles.contactIcon}
-            />
-          </a>
-          <a href="#">
-            <img
-              src={getImageUrl("Hero/Github.svg")}
-              alt="Github"
-              className={styles.contactIcon}
-            />
-          </a>
-          <a href="#">
-            <img
-              src={getImageUrl("Hero/Email.svg")}
-              alt="Email"
-              className={styles.contactIcon}
-            />
-          </a>
-          <a href="#">
-            <img
-              src={getImageUrl("Hero/Resume.svg")}
-              alt="Resume"
-              className={styles.contactIcon}
-            />
-          </a>
+        <div className={styles.contentRows}>
+          <div>
+            <h1>Experience</h1>
+          </div>
+        </div>
+        <div className={styles.contentRows}>
+          <div>
+            <h3>
+              &lt;/ UI/UX Designer <br />
+              Front-End Developer /&gt;
+            </h3>
+          </div>
+          <div>
+            <h1>Designer</h1>
+          </div>
+        </div>
+        <div className={styles.contentRows}>
+          <div>
+            <h1> & Developer</h1>
+          </div>
+          <div>
+            <h3>Contact me</h3>
+          </div>
+        </div>
+        <div className={styles.contentRows}>
+          <div>
+            <h2>
+              I build accessible, pixel-perfect digital experiences for the web.
+            </h2>
+          </div>
         </div>
       </div>
     </section>

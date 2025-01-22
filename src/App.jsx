@@ -7,6 +7,7 @@ function App() {
     <>
       <div className="contentWrapper">
         <Navbar />
+        <Hero />
       </div>
     </>
   );
