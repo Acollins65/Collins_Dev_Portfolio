@@ -48,16 +48,21 @@
     justify-content: space-between;
     align-items: center;
   }
+  .logo {
+    color: var(--color-text-primary);
+    font-size: var(--font-size-h3-sm);
+    line-height: 1rem;
+  }
   .menuBtn {
     display: block;
     cursor: pointer;
+    height: 1.125rem;
   }
 
   .menuItems {
     display: none;
   }
-  .menu ul {
-  }
+
   .menuItemsSmall {
     z-index: 100;
     display: flex;
