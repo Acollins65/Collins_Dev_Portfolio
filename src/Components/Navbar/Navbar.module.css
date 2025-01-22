@@ -4,7 +4,7 @@
   height: 50px;
   width: 100%;
   position: relative;
-  border-bottom: 1px solid var(--color-text-primary);
+  /* border-bottom: 1px solid var(--color-text-primary); */
 }
 .navbar {
   display: flex;
@@ -12,7 +12,7 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .logo {
@@ -52,19 +52,23 @@
     display: block;
     cursor: pointer;
   }
-  .menu {
+
+  .menuItems {
+    display: none;
+  }
+  .menu ul {
+  }
+  .menuItemsSmall {
+    z-index: 100;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: var(--nav-gap-sm);
     position: absolute;
     left: 0;
     top: 50px;
     width: 100%;
     height: 100vh;
-    background-color: #00800055;
-  }
-  .menuItemsSmall {
-    z-index: 100;
-    display: flex;
-    flex-direction: column;
-    gap: var(--nav-gap-sm);
   }
 
   .menuItemsSmall li {

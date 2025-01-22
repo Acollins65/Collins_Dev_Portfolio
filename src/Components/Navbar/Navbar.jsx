@@ -3,6 +3,8 @@ import styles from "./Navbar.module.css";
 import { getImageUrl } from "../../utils";
 
 export const Navbar = () => {
+  const [menuOpen, setMenuOpen] = React.useState(false);
+
   return (
     <nav className={styles.container}>
       <div className={styles.navbar}>
@@ -10,7 +12,12 @@ export const Navbar = () => {
           Collins.Dev
         </a>
         <div className={styles.menu}>
-          <ul className={`${styles.menuItems} ${styles.menuItemsSmall}`}>
+          <ul
+            className={`${styles.menuItems} ${
+              menuOpen && styles.menuItemsSmall
+            }`}
+            onClick={() => setMenuOpen(false)}
+          >
             <li>
               <a href="/">Home</a>
             </li>
@@ -27,8 +34,13 @@ export const Navbar = () => {
         </div>
         <img
           className={styles.menuBtn}
-          src={getImageUrl("nav/menuIcon.png")}
+          src={
+            menuOpen
+              ? getImageUrl("nav/closeIcon.png")
+              : getImageUrl("nav/menuIcon.png")
+          }
           alt="menu_button"
+          onClick={() => setMenuOpen(!menuOpen)}
         />
       </div>
     </nav>
