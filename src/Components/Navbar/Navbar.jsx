@@ -26,22 +26,6 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
-        {/* <div className={styles.navMobile}>
-          <ul className={styles.menuItemsSmall}>
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="#aboutMe">About me</a>
-            </li>
-            <li>
-              <a href="#myProjects">My Projects</a>
-            </li>
-            <li>
-              <a href="#ContactMe">Contact me</a>
-            </li>
-          </ul>
-        </div> */}
       </div>
     </nav>
   );

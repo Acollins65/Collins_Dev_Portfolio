@@ -1,8 +1,8 @@
 @import "../../vars.css";
 
 .container {
-  height: 100px;
-  background-color: green;
+  height: 50px;
+  width: 100%;
 }
 .navbar {
   display: flex;
@@ -70,6 +70,6 @@
 
   .menuItemsSmall li a {
     color: var(--color-text-primary);
-    font-size: 1rem;
+    font-size: var(--font-size-body-sm);
   }
 }
