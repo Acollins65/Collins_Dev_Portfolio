@@ -1,8 +1,10 @@
 @import "../../vars.css";
 
 .container {
-  height: 100px;
-  background-color: green;
+  height: 50px;
+  width: 100%;
+  position: relative;
+  /* border-bottom: 1px solid var(--color-text-primary); */
 }
 .navbar {
   display: flex;
@@ -10,7 +12,7 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .logo {
@@ -19,7 +21,9 @@
   font-weight: var(--font-weight-regular);
   line-height: 1rem;
 }
-
+.menuBtn {
+  display: none;
+}
 .menuItems {
   display: flex;
   flex-direction: row;
@@ -36,6 +40,7 @@
   font-weight: 400;
   line-height: 1rem;
 }
+
 @media screen and (max-width: 768px) {
   .navbar {
     display: flex;
@@ -43,33 +48,43 @@
     justify-content: space-between;
     align-items: center;
   }
+  .logo {
+    color: var(--color-text-primary);
+    font-size: var(--font-size-h3-sm);
+    line-height: 1rem;
+  }
+  .menuBtn {
+    display: block;
+    cursor: pointer;
+    height: 1.125rem;
+  }
+
   .menuItems {
+    display: none;
   }
 
   .menuItemsSmall {
-    position: absolute;
-    left: 0;
-    top: 100px;
     z-index: 100;
     display: flex;
-    width: 100%;
-    background-color: rgb(188, 188, 28);
+    justify-content: flex-start;
     flex-direction: column;
-
     gap: var(--nav-gap-sm);
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    height: 100vh;
   }
 
   .menuItemsSmall li {
     list-style-type: none;
     padding: 12px;
     width: 100%;
-    border: 1px solid var(--color-text-primary);
-    background-color: rgb(3, 3, 3);
-    border-radius: var(--border-radius);
+    border-bottom: 1px solid var(--color-text-primary);
   }
 
   .menuItemsSmall li a {
     color: var(--color-text-primary);
-    font-size: 1rem;
+    font-size: var(--font-size-body-sm);
   }
 }
