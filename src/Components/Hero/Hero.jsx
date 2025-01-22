@@ -10,7 +10,7 @@ export const Hero = () => {
             <h1>User</h1>
           </div>
           <div>
-            <h3>Hello,I,m Collins</h3>
+            <h3>👋 Hello,I,m Collins</h3>
           </div>
         </div>
         <div className={styles.contentRows}>
@@ -33,12 +33,12 @@ export const Hero = () => {
           <div>
             <h1> & Developer</h1>
           </div>
-          <div>
+          <div className={styles.contact}>
             <h3>Contact me</h3>
           </div>
         </div>
         <div className={styles.contentRows}>
-          <div>
+          <div className={styles.headerDetail}>
             <h2>
               I build accessible, pixel-perfect digital experiences for the web.
             </h2>

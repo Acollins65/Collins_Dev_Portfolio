@@ -1,8 +1,6 @@
 @import "../../vars.css";
 
 .container {
-  border: 1px solid var(--color-text-primary);
-
   width: 100%;
   display: flex;
   justify-content: center;
@@ -11,7 +9,6 @@
 }
 
 .content {
-  background-color: green;
   width: 100%;
 }
 .contentRows {
@@ -31,5 +28,24 @@ h1 {
 h2 {
   font-size: var(--font-size-h2);
   line-height: 2rem;
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-regular);
+  text-wrap: wrap;
+  text-align: center;
+}
+h3 {
+  font-size: var(--font-size-h3);
+  line-height: 1.25rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.headerDetail {
+  max-width: 700px;
+  width: 90%;
+  padding-top: 1.25rem;
+}
+
+.contact {
+  border: 1px solid var(--color-text-primary);
+  padding: 12px 16px;
+  border-radius: 80px;
 }
