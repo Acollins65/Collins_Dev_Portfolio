@@ -64,7 +64,7 @@
   }
 
   .menuItemsSmall {
-    z-index: 100;
+    z-index: 90;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
