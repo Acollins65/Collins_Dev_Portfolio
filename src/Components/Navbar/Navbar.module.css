@@ -13,7 +13,7 @@
   padding: 16px 0;
   background-color: pink;
   height: 100%;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .logo {
