@@ -77,3 +77,27 @@ h3 {
     padding: 8px 12px;
   }
 }
+
+@media screen and (max-width: 430px) {
+  .container {
+    padding: 100px 0 50px;
+  }
+  h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  h2 {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  h3 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  .headerDetail {
+    padding-top: 1rem;
+  }
+  .roundedBoarder {
+    padding: 8px 12px;
+  }
+}
