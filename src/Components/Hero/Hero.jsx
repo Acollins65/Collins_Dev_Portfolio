@@ -10,7 +10,9 @@ export const Hero = () => {
             <h1>User</h1>
           </div>
           <div className={styles.roundedBoarder}>
-            <h3>👋 Hello,I,m Collins</h3>
+            <h3>
+              <span className={styles.waveEmoji}> 👋</span> Hello,I,m Collins
+            </h3>
           </div>
         </div>
         <div className={styles.contentRows}>
