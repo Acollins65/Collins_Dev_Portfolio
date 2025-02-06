@@ -149,7 +149,7 @@ h3 {
   }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
   .container {
     padding: 100px 0 50px;
   }
