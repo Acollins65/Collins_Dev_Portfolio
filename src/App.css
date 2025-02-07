@@ -9,7 +9,7 @@
   background-color: var(--color-background);
 
   /* width: 83.33vw; */
-  max-width: 1200px; /* Maximum width is 1200px */
+  /* max-width: 1200px; Maximum width is 1200px */
   width: 100%;
   padding: 1.25rem;
   overflow: visible;

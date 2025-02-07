@@ -7,12 +7,14 @@
   align-items: flex-start;
   padding: 226px 0 100px;
   font-family: "Inter", serif;
+  background-color: red;
 
   overflow: hidden;
 }
 
 .content {
   width: 100%;
+  background-color: aqua;
 }
 .contentRows {
   width: 100%;
@@ -48,19 +50,6 @@ h3 {
   padding-top: 1.25rem;
 }
 
-@keyframes shake {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-5px);
-  }
-  75% {
-    transform: translateX(5px);
-  }
-}
-
 .roundedBoarder {
   border: 1px solid var(--color-text-primary);
   padding: 12px 16px;
@@ -77,52 +66,11 @@ h3 {
   /* This will let the animation complete one more cycle */
 }
 
-@keyframes wave {
-  0% {
-    transform: rotate(0deg) scale(1);
-  }
-  10% {
-    transform: rotate(25deg) scale(1.4);
-  }
-  20% {
-    transform: rotate(-20deg) scale(1.6);
-  }
-  30% {
-    transform: rotate(25deg) scale(1.4);
-  }
-  40% {
-    transform: rotate(-15deg) scale(1.5);
-  }
-  50% {
-    transform: rotate(20deg) scale(1.4);
-  }
-  60% {
-    transform: rotate(-10deg) scale(1.3);
-  }
-  70% {
-    transform: rotate(15deg) scale(1.2);
-  }
-  80% {
-    transform: rotate(-5deg) scale(1.1);
-  }
-  100% {
-    transform: rotate(0deg) scale(1);
-  }
-}
-
 .roundedBoarder h3 {
   margin: 0;
 }
 
-/* Create a span for the emoji to isolate the animation */
-.roundedBoarder h3 .waveEmoji {
-  display: inline-block;
-  transform-origin: 70% 70%; /* Adjust the rotation point */
-}
-
-/* Apply animation on hover */
-.roundedBoarder:hover .waveEmoji {
-  animation: wave 2s cubic-bezier(0.28, 0.84, 0.42, 1) infinite;
+@media screen and (max-width: 900px) {
 }
 
 @media screen and (max-width: 768px) {
