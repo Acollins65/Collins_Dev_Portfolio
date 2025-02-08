@@ -2,19 +2,23 @@
 
 .container {
   width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding: 226px 0 100px;
+  /* padding: 226px 0 100px; */
   font-family: "Inter", serif;
   background-color: red;
-
+  padding: 0;
+  margin: 0;
   overflow: hidden;
 }
 
 .content {
   width: 100%;
-  background-color: aqua;
+  padding: 200px 0 0;
+  height: auto;
+  max-width: 1000px;
+  background-color: rgb(4, 58, 58);
 }
 .contentRows {
   width: 100%;
@@ -26,7 +30,7 @@
 
 h1 {
   font-size: var(--font-size-h1);
-  line-height: 5.5rem;
+  line-height: 4.5rem;
   font-weight: var(--font-weight-semibold);
   text-transform: uppercase;
 }
@@ -39,7 +43,7 @@ h2 {
 }
 h3 {
   font-size: var(--font-size-h3);
-  line-height: 1.25rem;
+  line-height: 0.9rem;
   font-weight: var(--font-weight-bold);
   font-family: "Hanken Grotesk", serif;
 }
@@ -47,7 +51,7 @@ h3 {
 .headerDetail {
   max-width: 700px;
   width: 90%;
-  padding-top: 1.25rem;
+  padding-top: 0.5rem;
 }
 
 .roundedBoarder {
@@ -70,24 +74,18 @@ h3 {
   margin: 0;
 }
 
-@media screen and (max-width: 900px) {
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 100px 0 50px;
-  }
+@media screen and (max-width: 1000px) {
   h1 {
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 4.5rem;
+    line-height: 4.1rem;
   }
   h2 {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.2rem;
+    line-height: 1rem;
   }
   h3 {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 0.9rem;
+    line-height: 0.9rem;
   }
   .headerDetail {
     padding-top: 1rem;
@@ -99,14 +97,22 @@ h3 {
 
 @media screen and (max-width: 500px) {
   .container {
-    padding: 100px 0 50px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
+
+  .content {
+    padding: 0;
+    margin: 0;
+  }
+
   h1 {
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 3rem;
+    line-height: 3rem;
   }
   h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 2rem;
   }
   h3 {
