@@ -44,7 +44,7 @@ h2 {
 h3 {
   font-size: var(--font-size-h3);
   line-height: 0.9rem;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-light);
   font-family: "Hanken Grotesk", serif;
 }
 
@@ -56,7 +56,7 @@ h3 {
 
 .roundedBoarder {
   border: 1px solid var(--color-text-primary);
-  padding: 12px 16px;
+  padding: 12px;
   border-radius: 80px;
   transition: shake 3s ease-in-out 0;
 }
@@ -79,19 +79,8 @@ h3 {
     font-size: 4.5rem;
     line-height: 4.1rem;
   }
-  h2 {
-    font-size: 1.2rem;
-    line-height: 1rem;
-  }
-  h3 {
-    font-size: 0.9rem;
-    line-height: 0.9rem;
-  }
   .headerDetail {
     padding-top: 1rem;
-  }
-  .roundedBoarder {
-    padding: 8px 12px;
   }
 }
 
@@ -121,8 +110,5 @@ h3 {
   }
   .headerDetail {
     padding-top: 1rem;
-  }
-  .roundedBoarder {
-    padding: 8px 12px;
   }
 }

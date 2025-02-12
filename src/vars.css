@@ -14,9 +14,11 @@
   --font-weight-semibold: 600;
 
   /* Fonts size */
+  --font-logo: 1rem;
+  --font-logo-sm: 0.875rem;
   --font-size-h1: 5rem;
-  --font-size-h2: 1.25rem;
-  --font-size-h3: 0.9rem;
+  --font-size-h2: 1rem;
+  --font-size-h3: 0.75rem;
   --font-size-h3-sm: 1.25rem;
   --font-size-body: 1rem;
   --font-size-body-sm: 0.875rem;
