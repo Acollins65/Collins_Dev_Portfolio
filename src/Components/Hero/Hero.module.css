@@ -2,12 +2,11 @@
 
 .container {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  /* padding: 226px 0 100px; */
-  font-family: "Inter", serif;
-  background-color: red;
+  align-items: center;
+  flex-direction: column;
   padding: 0;
   margin: 0;
   overflow: hidden;
@@ -15,8 +14,11 @@
 
 .content {
   width: 100%;
-  padding: 200px 0 0;
+  padding: 0;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   max-width: 1000px;
   background-color: rgb(4, 58, 58);
 }
@@ -32,31 +34,33 @@ h1 {
   font-size: var(--font-size-h1);
   line-height: 4.5rem;
   font-weight: var(--font-weight-semibold);
+  letter-spacing: 4px;
   text-transform: uppercase;
+  font-family: "Inter", serif;
 }
 h2 {
   font-size: var(--font-size-h2);
-  line-height: 2rem;
+  line-height: 1.8rem;
   font-weight: var(--font-weight-light);
   text-wrap: wrap;
   text-align: center;
 }
 h3 {
   font-size: var(--font-size-h3);
-  line-height: 0.9rem;
+  line-height: 1rem;
   font-weight: var(--font-weight-light);
-  font-family: "Hanken Grotesk", serif;
 }
 
 .headerDetail {
   max-width: 700px;
-  width: 90%;
-  padding-top: 0.5rem;
+  width: 60%;
+  margin-top: 0.5rem;
+  background-color: pink;
 }
 
 .roundedBoarder {
   border: 1px solid var(--color-text-primary);
-  padding: 12px;
+  padding: 16px;
   border-radius: 80px;
   transition: shake 3s ease-in-out 0;
 }
@@ -79,18 +83,30 @@ h3 {
     font-size: 4.5rem;
     line-height: 4.1rem;
   }
-  .headerDetail {
-    padding-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
+
+  h2 {
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+
+  .roundedBoarder {
+    padding: 8px;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 580px) {
   .container {
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    background-color: aqua;
   }
-
   .content {
     padding: 0;
     margin: 0;
@@ -98,17 +114,21 @@ h3 {
 
   h1 {
     font-size: 3rem;
-    line-height: 3rem;
+    line-height: 2.8rem;
   }
   h2 {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 0.75rem;
+    line-height: 0.8rem;
   }
   h3 {
     font-size: 1rem;
-    line-height: 1.25rem;
+    line-height: 0.75rem;
+  }
+
+  .roundedBoarder {
+    padding: 6px 7px;
   }
   .headerDetail {
-    padding-top: 1rem;
+    margin-top: 0.4rem;
   }
 }

@@ -12,9 +12,9 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  font-family: "Hanken Grotesk", serif;
   font-optical-sizing: auto;
-  background-color: var(--color-background);
+  /* background-color: var(--color-background); */
+  font-family: "Hanken Grotesk", serif;
 }
 
 a {

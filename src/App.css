@@ -1,22 +1,8 @@
 @import "./vars.css";
 
 .contentWrapper {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--color-background);
-
-  /* width: 83.33vw; */
-  /* max-width: 1200px; Maximum width is 1200px */
   width: 100%;
   overflow: visible;
   color: white;
-}
-
-@media screen and (max-width: 768px) {
-  .contentWrapper {
-    width: 100vw;
-  }
+  background-color: var(--color-background);
 }
