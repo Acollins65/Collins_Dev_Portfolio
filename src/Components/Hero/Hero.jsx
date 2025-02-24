@@ -11,7 +11,7 @@ export const Hero = () => {
           </div>
           <div className={styles.roundedBoarder}>
             <h3>
-              <span className={styles.waveEmoji}> 👋</span> Hello,I,m Collins
+              <span className={styles.waveEmoji}> 👋</span> Hello, I'm Collins
             </h3>
           </div>
         </div>

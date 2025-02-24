@@ -20,7 +20,6 @@
   flex-direction: column;
   gap: 8px;
   max-width: 1000px;
-  background-color: rgb(4, 58, 58);
 }
 .contentRows {
   width: 100%;
@@ -41,25 +40,24 @@ h1 {
 h2 {
   font-size: var(--font-size-h2);
   line-height: 1.8rem;
-  font-weight: var(--font-weight-light);
+  font-weight: var(--font-weight-regular);
   text-wrap: wrap;
   text-align: center;
 }
 h3 {
   font-size: var(--font-size-h3);
   line-height: 1rem;
-  font-weight: var(--font-weight-light);
+  font-weight: var(--font-weight-regular);
 }
 
 .headerDetail {
   max-width: 700px;
   width: 60%;
   margin-top: 0.5rem;
-  background-color: pink;
 }
 
 .roundedBoarder {
-  border: 1px solid var(--color-text-primary);
+  border: 0.1px solid var(--color-text-primary);
   padding: 16px;
   border-radius: 80px;
   transition: shake 3s ease-in-out 0;
@@ -81,21 +79,43 @@ h3 {
 @media screen and (max-width: 1000px) {
   h1 {
     font-size: 4.5rem;
-    line-height: 4.1rem;
+    line-height: 4rem;
+  }
+  .headerDetail {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 760px) {
+  h1 {
+    font-size: 1rem;
+    line-height: 4rem;
+  }
+  .headerDetail {
+    width: 55%;
+    margin-top: 0.2rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 4rem;
-    line-height: 3.5rem;
+    font-size: 3rem;
+    line-height: 2.6rem;
+    letter-spacing: 3px;
   }
 
   h2 {
-    font-size: 0.875rem;
-    line-height: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
   }
 
+  h3 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: var(--font-weight-regular);
+  }
+  .headerDetail {
+    width: 60%;
+  }
   .roundedBoarder {
     padding: 8px;
   }
@@ -105,30 +125,9 @@ h3 {
   .container {
     flex-direction: column;
     justify-content: center;
-    background-color: aqua;
   }
   .content {
     padding: 0;
-    margin: 0;
-  }
-
-  h1 {
-    font-size: 3rem;
-    line-height: 2.8rem;
-  }
-  h2 {
-    font-size: 0.75rem;
-    line-height: 0.8rem;
-  }
-  h3 {
-    font-size: 1rem;
-    line-height: 0.75rem;
-  }
-
-  .roundedBoarder {
-    padding: 6px 7px;
-  }
-  .headerDetail {
-    margin-top: 0.4rem;
+    margin: 0px;
   }
 }
