@@ -130,4 +130,11 @@ h3 {
     padding: 0;
     margin: 0px;
   }
+
+  .firstRow {
+    flex-direction: column-reverse;
+  }
+  .firstRow > div:nth-child(2) {
+    display: none;
+  }
 }
