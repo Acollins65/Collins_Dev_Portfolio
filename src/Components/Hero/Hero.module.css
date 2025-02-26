@@ -137,4 +137,10 @@ h3 {
   .firstRow > div:nth-child(2) {
     display: none;
   }
+  .secondRow > div:nth-child(1) {
+    display: none;
+  }
+  .thirdRow > div:nth-child(2) {
+    display: none;
+  }
 }

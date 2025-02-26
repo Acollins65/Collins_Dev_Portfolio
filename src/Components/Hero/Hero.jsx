@@ -20,7 +20,7 @@ export const Hero = () => {
             <h1>Experience</h1>
           </div>
         </div>
-        <div className={styles.contentRows}>
+        <div className={`${styles.contentRows} ${styles.secondRow}`}>
           <div>
             <h3>
               &lt;/ UI/UX Designer <br />
@@ -31,7 +31,7 @@ export const Hero = () => {
             <h1>Designer</h1>
           </div>
         </div>
-        <div className={styles.contentRows}>
+        <div className={`${styles.contentRows} ${styles.thirdRow}`}>
           <div>
             <h1> & Developer</h1>
           </div>
