@@ -6,12 +6,16 @@ export const Hero = () => {
     <section className={styles.container}>
       <div className={styles.content}>
         <div className={`${styles.contentRows} ${styles.firstRow}`}>
+          <div className={styles.wrapper}>
+            <span className={styles.waveEmoji}> 👋</span>
+            <h3 className={styles.roundedBoarder}>Hi, I'm Collins</h3>
+          </div>
           <div>
             <h1>User</h1>
           </div>
           <div className={styles.roundedBoarder}>
             <h3>
-              <span className={styles.waveEmoji}> 👋</span> Hello, I'm Collins
+              <span className={styles.waveEmoji}> 👋</span> Hi, I'm Collins
             </h3>
           </div>
         </div>
@@ -29,6 +33,9 @@ export const Hero = () => {
           </div>
           <div>
             <h1>Designer</h1>
+          </div>
+          <div className={styles.roundedBoarderDev}>
+            <h3>Contact me</h3>
           </div>
         </div>
         <div className={`${styles.contentRows} ${styles.thirdRow}`}>
