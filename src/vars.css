@@ -15,9 +15,9 @@
   --font-weight-semibold: 600;
 
   /* Fonts size */
-  --font-logo: 1rem;
+  --font-logo: 1.75rem;
   --font-logo-sm: 0.875rem;
-  --font-size-h1: 5rem;
+  --font-size-h1: 6rem;
   --font-size-h2: 1.5rem;
   --font-size-h3: 1rem;
   --font-size-h3-sm: 1.25rem;
@@ -27,5 +27,6 @@
   --nav-gap-lg: 1.25rem;
   --nav-gap-sm: 0.5rem;
 
-  --border-radius: 0.5rem;
+  --border-radius: 4rem;
+  --border-style: 1px solid var(--color-text-border);
 }

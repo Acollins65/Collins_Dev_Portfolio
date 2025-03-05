@@ -34,9 +34,9 @@ export const Hero = () => {
           <div>
             <h1>Designer</h1>
           </div>
-          <div className={styles.roundedBoarderDev}>
+          <button className={styles.roundedBoarderDev}>
             <h3>Contact me</h3>
-          </div>
+          </button>
         </div>
         <div className={`${styles.contentRows} ${styles.thirdRow}`}>
           <div>

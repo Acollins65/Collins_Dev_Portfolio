@@ -2,7 +2,7 @@
 
 .container {
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,6 +10,7 @@
   padding: 0;
   margin: 0;
   overflow: hidden;
+  background-color: var(--color-background);
 }
 
 .content {
@@ -31,7 +32,7 @@
 
 h1 {
   font-size: var(--font-size-h1);
-  line-height: 4.5rem;
+  line-height: 5.5rem;
   font-weight: var(--font-weight-semibold);
   letter-spacing: normal;
   text-transform: uppercase;
@@ -63,9 +64,9 @@ h3 {
   display: none;
 }
 .roundedBoarder {
-  border: 0.1px solid var(--color-text-border);
+  border: var(--border-style);
   padding: 16px;
-  border-radius: 80px;
+  border-radius: var(--border-radius);
   transition: shake 3s ease-in-out 0;
 }
 
@@ -85,7 +86,7 @@ h3 {
 @media screen and (max-width: 1000px) {
   h1 {
     font-size: 3.75rem;
-    line-height: 3rem;
+    line-height: 3.25rem;
   }
   .headerDetail {
     width: 85%;
@@ -163,7 +164,7 @@ h3 {
     display: block;
     border: 0.1px solid var(--color-text-border);
     padding: 12px;
-    border-radius: 80px;
+    border-radius: var(--border-radius);
     transition: shake 3s ease-in-out 0;
   }
 

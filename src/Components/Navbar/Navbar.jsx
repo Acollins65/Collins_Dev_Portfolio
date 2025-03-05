@@ -9,7 +9,7 @@ export const Navbar = () => {
     <nav className={styles.container}>
       <div className={styles.navbar}>
         <a className={styles.logo} href="/">
-          Collins.Dev
+          COLLINS
         </a>
         <div className={styles.menu}>
           <ul
@@ -28,7 +28,7 @@ export const Navbar = () => {
                     .scrollIntoView({ behavior: "smooth" });
                 }}
               >
-                Home
+                About Me
               </a>
             </li>
             <li>
@@ -41,7 +41,7 @@ export const Navbar = () => {
                     .scrollIntoView({ behavior: "smooth" });
                 }}
               >
-                About me
+                Project
               </a>
             </li>
             <li>
@@ -54,10 +54,10 @@ export const Navbar = () => {
                     .scrollIntoView({ behavior: "smooth" });
                 }}
               >
-                My Projects
+                Experience
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="#ContactMe"
                 onClick={(e) => {
@@ -69,8 +69,60 @@ export const Navbar = () => {
               >
                 Contact me
               </a>
-            </li>
+            </li> */}
+            {menuOpen && (
+              <div className={styles.mobileIcons}>
+                <a href="mailto:your-email@example.com">
+                  <img
+                    src={getImageUrl("nav/socialIcons/mail.svg")}
+                    alt="email"
+                  />
+                </a>
+                <a
+                  href="https://github.com/Acollins65"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={getImageUrl("nav/socialIcons/Github.svg")}
+                    alt="github"
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/alfred-collins-bimpong-6393a5180/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={getImageUrl("nav/socialIcons/Linkedin.svg")}
+                    alt="linkedin"
+                  />
+                </a>
+              </div>
+            )}
           </ul>
+        </div>
+        <div className={styles.socialIcons}>
+          <a href="mailto:your-email@example.com">
+            <img src={getImageUrl("nav/socialIcons/mail.svg")} alt="email" />
+          </a>
+          <a
+            href="https://github.com/Acollins65"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={getImageUrl("nav/socialIcons/Github.svg")} alt="github" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/alfred-collins-bimpong-6393a5180/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={getImageUrl("nav/socialIcons/Linkedin.svg")}
+              alt="linkedin"
+            />
+          </a>
         </div>
         <button
           className={styles.menuBtn}
