@@ -1,0 +1,34 @@
+@import "../../vars.css";
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  /* background-color: var(--color-background); */
+  background-color: green;
+}
+
+.content {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: rgb(225, 71, 24);
+}
+
+@media screen and (max-width: 1000px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 500px) {
+}

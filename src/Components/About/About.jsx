@@ -1,32 +1,22 @@
 import React from "react";
+import styles from "./About.module.css";
+import { getImageUrl } from "../../utils";
 
 export const About = () => {
   return (
-    <div>
-      <div
-        style={{
-          maxWidth: "800px",
-          margin: "50px auto",
-          background: "white",
-          padding: "20px",
-          borderRadius: "8px",
-          boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
-          color: "black",
-        }}
-      >
-        <h1 style={{ textAlign: "center", color: "#333" }}>About Us</h1>
-        <p style={{ color: "black", lineHeight: 1.6 }}>
-          Welcome to our company! We are committed to delivering the best
-          products and services to our customers. Our team is dedicated to
-          innovation and excellence, ensuring customer satisfaction at every
-          step.
-        </p>
-        <p style={{ color: "black", lineHeight: 1.6 }}>
-          Founded with passion and expertise, we strive to make a positive
-          impact in our industry and community. Thank you for being part of our
-          journey.
-        </p>
+    <section className={styles.container}>
+      <div className={styles.content}>
+        <div className={styles.head}>
+          <div className={styles.title}>
+            <h1>Who am I? 🤔</h1>
+          </div>
+          <div className={styles.lineWrapper}>
+            <div className={styles.line}></div>
+          </div>
+        </div>
+        <div className={styles.head}></div>
+        <div className={styles.bottom}></div>
       </div>
-    </div>
+    </section>
   );
 };
