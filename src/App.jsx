@@ -1,17 +1,22 @@
 import "./App.css";
-import { Hero } from "./Components/Hero/Hero";
-import { Navbar } from "./Components/Navbar/Navbar";
-import { About } from "./Components/About/About";
+import { Navbar } from "./Sections/Navbar/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home/Home";
+import AboutMe from "./Pages/AboutMe/AboutMe";
+import Projects from "./Pages/Projects/Projects";
 
 function App() {
   return (
-    <>
-      <div className="contentWrapper">
+    <div className="contentWrapper">
+      <BrowserRouter>
         <Navbar />
-        <Hero />
-        <About />
-      </div>
-    </>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutMe />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Navbar.module.css";
 import { getImageUrl } from "../../utils";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = React.useState(false);
@@ -19,44 +20,15 @@ export const Navbar = () => {
             onClick={() => setMenuOpen(false)}
           >
             <li>
-              <a
-                href="/"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document
-                    .querySelector("#aboutMe")
-                    .scrollIntoView({ behavior: "smooth" });
-                }}
-              >
-                About Me
-              </a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a
-                href="#aboutMe"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document
-                    .querySelector("#aboutMe")
-                    .scrollIntoView({ behavior: "smooth" });
-                }}
-              >
-                Project
-              </a>
+              <Link to="/about">About Me</Link>
             </li>
             <li>
-              <a
-                href="#myProjects"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document
-                    .querySelector("#aboutMe")
-                    .scrollIntoView({ behavior: "smooth" });
-                }}
-              >
-                Experience
-              </a>
+              <Link to="/projects">Projects</Link>
             </li>
+
             {/* <li>
               <a
                 href="#ContactMe"
