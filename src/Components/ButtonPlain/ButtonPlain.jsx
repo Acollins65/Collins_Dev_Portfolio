@@ -1,48 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import styles from "./ButtonPlain.module.css";
 
 export const ButtonPlain = ({ children, onClick }) => {
-  const buttonStyle = {
-    background: "none",
-    border: "none",
-    color: "white",
-    padding: "12px 20px",
-    fontSize: "1rem",
-    fontWeight: "500",
-    cursor: "pointer",
-    display: "flex",
-    alignItems: "center",
-    gap: "10px",
-    transition: "all 0.3s ease",
-  };
-
-  const iconStyle = {
-    transition: "transform 0.3s ease",
-  };
-
-  const handleHover = (e) => {
-    e.currentTarget.style.transform = "scale(1.05)";
-    e.currentTarget.querySelector(".download-icon").style.transform =
-      "translateY(3px)";
-  };
-
-  const handleMouseLeave = (e) => {
-    e.currentTarget.style.transform = "scale(1)";
-    e.currentTarget.querySelector(".download-icon").style.transform =
-      "translateY(0)";
-  };
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <button
-      style={buttonStyle}
+      className={`${styles.button} ${isHovered ? styles.hovered : ""}`}
       onClick={onClick}
-      onMouseEnter={handleHover}
-      onMouseLeave={handleMouseLeave}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <svg
-        className="download-icon"
-        style={iconStyle}
-        width="20"
-        height="20"
+        className={`${styles.downloadIcon} ${
+          isHovered ? styles.iconHovered : ""
+        }`}
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

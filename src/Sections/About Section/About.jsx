@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./About.module.css";
-import { ButtonWhite } from "../../Components/ButtonWhite";
-import { ButtonPlain } from "../../Components/ButtonPlain";
+import { ButtonWhite } from "../../Components/ButtonWhite/ButtonWhite";
+import { ButtonPlain } from "../../Components/ButtonPlain/ButtonPlain";
 
 import { getImageUrl } from "../../utils";
 

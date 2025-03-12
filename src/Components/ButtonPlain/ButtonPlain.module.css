@@ -1,0 +1,35 @@
+.button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  font-size: var(--font-size-body);
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+.button.hovered {
+  transform: scale(1.05);
+}
+
+.downloadIcon {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+  transform: translateY(0);
+}
+
+.downloadIcon.iconHovered {
+  transform: translateY(3px);
+}
+
+@media (max-width: 768px) {
+  .button {
+    font-size: var(--font-size-body-sm);
+  }
+}
