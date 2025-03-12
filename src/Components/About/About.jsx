@@ -7,11 +7,11 @@ export const About = () => {
     <section className={styles.container}>
       <div className={styles.content}>
         <div className={styles.head}>
-          <div className={styles.title}>
-            <h1>Who am I? 🤔</h1>
+          <div className={`${styles.title} ${styles.half}`}>
+            <h2>Who am I? 🤔</h2>
           </div>
-          <div className={styles.lineWrapper}>
-            <div className={styles.line}></div>
+          <div className={`${styles.lineWrapper} ${styles.half}`}>
+            <div className={styles.line}>Line</div>
           </div>
         </div>
         <div className={styles.head}></div>

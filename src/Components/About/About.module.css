@@ -24,6 +24,18 @@
   background-color: rgb(225, 71, 24);
 }
 
+.head {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.title {
+  h4 {
+    font-size: 1.25;
+  }
+}
+
 @media screen and (max-width: 1000px) {
 }
 
