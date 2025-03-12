@@ -6,15 +6,15 @@ export const About = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <div className={styles.head}>
+        <div className={styles.header}>
           <div className={`${styles.title} ${styles.half}`}>
-            <h2>Who am I? 🤔</h2>
+            <h4>Who am I? 🤔</h4>
           </div>
           <div className={`${styles.lineWrapper} ${styles.half}`}>
-            <div className={styles.line}>Line</div>
+            <div className={styles.line}></div>
           </div>
         </div>
-        <div className={styles.head}></div>
+        <div className={styles.contentDetails}></div>
         <div className={styles.bottom}></div>
       </div>
     </section>
