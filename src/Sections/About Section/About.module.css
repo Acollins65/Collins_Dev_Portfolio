@@ -27,7 +27,7 @@
 .header {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 20px;
 }
 
 .title {
@@ -36,6 +36,7 @@
 
 .title h4 {
   font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-bold);
 }
 .lineWrapper {
   display: flex;
@@ -50,17 +51,25 @@
 
 .contentDetails {
   display: flex;
-  flex-grow: 1;
-  gap: 80px;
 }
 .writing {
+  max-width: 55%;
   display: flex;
   flex-direction: column;
   gap: 40px;
   justify-content: space-between;
 }
+
+.tech {
+  /* background-color: blue; */
+  width: 45%;
+  display: flex;
+  justify-content: flex-end;
+}
 .writing p {
   font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  text-wrap: balance;
 }
 .buttons {
   display: flex;
@@ -70,27 +79,127 @@
   display: none;
 }
 
-@media screen and (max-width: 1000px) {
+.techStack {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 95%;
+  /* background-color: yellow; */
+}
+.techIcons {
+  width: 60px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: red;
 }
 
-@media screen and (max-width: 768px) {
-  .contentDetails {
-    display: flex;
+@media screen and (max-width: 1000px) {
+  /* .contentDetails {
     flex-direction: column;
     gap: 40px;
   }
+  .writing {
+    width: 100%;
+  }
+
+  .tech {
+    background-color: blue;
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .buttonSm {
+    display: flex;
+    gap: 10px;
+  }
+
+  .buttons {
+    display: none;
+  } */
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 0 20px;
+  }
+  .contentDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .writing {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .tech {
+    width: 100%;
+    justify-content: last baseline;
+  }
+
+  .techStack {
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 
   .writing p {
-    font-size: var(--font-size-body-md);
+    font-size: 1.125rem;
   }
   .buttons {
     display: none;
   }
   .buttonSm {
+    margin-top: 40px;
     display: flex;
     gap: 10px;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 524px) {
+  .title h4 {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+  }
+
+  .writing p {
+    font-size: rem;
+    text-align: center;
+  }
+
+  .tech {
+    width: 100%;
+    justify-content: last baseline;
+    /* background-color: pink; */
+  }
+
+  .techStack {
+    /* background-color: yellow; */
+    padding-left: 4%;
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .tech {
+    width: 100%;
+    justify-content: last baseline;
+  }
+
+  .techStack {
+    padding: 0px;
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }

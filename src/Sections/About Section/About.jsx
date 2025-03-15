@@ -20,11 +20,12 @@ export const About = () => {
         <div className={styles.contentDetails}>
           <div className={styles.writing}>
             <p>
-              I’m a front-end engineer focused on creating high-performance
-              solutions, from sleek interfaces to scalable systems, using the
-              best tools for the job. With a year of experience, I specialise in
-              building responsive, user-friendly designs and optimising web
-              performance to deliver seamless digital experiences.
+              A front-end engineer dedicated to crafting high-performance
+              solutions, from sleek, intuitive interfaces to scalable, efficient
+              systems, using the best tools for the job. With a year of
+              experience, I specialize in building responsive, user-friendly
+              designs while optimizing web performance to deliver seamless
+              digital experiences.
             </p>
             <div className={styles.buttons}>
               <ButtonWhite onClick={() => navigate("/about")}>
@@ -35,11 +36,22 @@ export const About = () => {
               </ButtonPlain>
             </div>
           </div>
-          <div className={styles.techStack}>
-            Tech stach for Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Quas assumenda cum distinctio sunt at sit ad sint eos autem
-            minus ex doloremque accusamus consequatur, quasi facilis! Quo atque
-            quasi impedit.
+          <div className={styles.tech}>
+            <div className={styles.techStack}>
+              <div className={styles.techIcons}></div>
+              <div className={styles.techIcons}></div>
+              <div className={styles.techIcons}></div>
+              <div className={styles.techIcons}></div>
+              <div className={styles.techIcons}></div>
+              <div className={styles.techIcons}></div>
+              <div className={styles.techIcons}></div>
+              <div className={styles.techIcons}></div>
+              <div className={styles.techIcons}></div>
+              <div className={styles.techIcons}></div>
+              <div className={styles.techIcons}></div>
+              <div className={styles.techIcons}></div>
+              <div className={styles.techIcons}></div>
+            </div>
           </div>
           <div className={styles.buttonSm}>
             <ButtonWhite onClick={() => navigate("/about")}>

@@ -18,8 +18,6 @@
 }
 
 .downloadIcon {
-  width: 20px;
-  height: 20px;
   transition: transform 0.3s ease;
   transform: translateY(0);
 }
