@@ -6,11 +6,13 @@
   font-size: var(--font-size-body);
   font-weight: 500;
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 10px;
   transition: all 0.3s ease;
   transform: scale(1);
+  white-space: nowrap;
+  line-height: 1;
 }
 
 .button.hovered {
@@ -20,6 +22,10 @@
 .downloadIcon {
   transition: transform 0.3s ease;
   transform: translateY(0);
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: text-bottom;
 }
 
 .downloadIcon.iconHovered {

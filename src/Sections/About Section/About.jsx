@@ -20,12 +20,10 @@ export const About = () => {
         <div className={styles.contentDetails}>
           <div className={styles.writing}>
             <p>
-              A front-end engineer dedicated to crafting high-performance
-              solutions, from sleek, intuitive interfaces to scalable, efficient
-              systems, using the best tools for the job. With a year of
-              experience, I specialize in building responsive, user-friendly
-              designs while optimizing web performance to deliver seamless
-              digital experiences.
+              Front-end developer with an eye for performance and user
+              experience. I build responsive interfaces while constantly
+              expanding my technical horizons. My tools of choice transform
+              complex challenges into elegant solutions.
             </p>
             <div className={styles.buttons}>
               <ButtonWhite onClick={() => navigate("/about")}>
@@ -38,19 +36,90 @@ export const About = () => {
           </div>
           <div className={styles.tech}>
             <div className={styles.techStack}>
-              <div className={styles.techIcons}></div>
-              <div className={styles.techIcons}></div>
-              <div className={styles.techIcons}></div>
-              <div className={styles.techIcons}></div>
-              <div className={styles.techIcons}></div>
-              <div className={styles.techIcons}></div>
-              <div className={styles.techIcons}></div>
-              <div className={styles.techIcons}></div>
-              <div className={styles.techIcons}></div>
-              <div className={styles.techIcons}></div>
-              <div className={styles.techIcons}></div>
-              <div className={styles.techIcons}></div>
-              <div className={styles.techIcons}></div>
+              <div className={styles.techIcons}>
+                <img
+                  src={getImageUrl("techStack/react-original.svg")}
+                  alt="react"
+                />
+                <p>React</p>
+              </div>
+              <div className={styles.techIcons}>
+                <img
+                  src={getImageUrl("techStack/html5-original.svg")}
+                  alt="html"
+                />
+                <p>HTML</p>
+              </div>
+              <div className={styles.techIcons}>
+                <img
+                  src={getImageUrl("techStack/css3-original.svg")}
+                  alt="css"
+                />
+                <p>CSS</p>
+              </div>
+              <div className={styles.techIcons}>
+                <img
+                  src={getImageUrl("techStack/sass-original.svg")}
+                  alt="sass"
+                />
+                <p>Sass</p>
+              </div>
+              <div className={styles.techIcons}>
+                <img
+                  src={getImageUrl("techStack/javascript-original.svg")}
+                  alt="javascript"
+                />
+                <p>JavaScript</p>
+              </div>
+              <div className={styles.techIcons}>
+                <img
+                  src={getImageUrl("techStack/nextjs-original.svg")}
+                  alt="nextjs"
+                />
+                <p>Next.js</p>
+              </div>
+              <div className={styles.techIcons}>
+                <img
+                  src={getImageUrl("techStack/tailwindcss-original.svg")}
+                  alt="tailwind"
+                />
+                <p>Tailwind</p>
+              </div>
+              <div className={styles.techIcons}>
+                <img
+                  src={getImageUrl("techStack/python-original.svg")}
+                  alt="python"
+                />
+                <p>Python</p>
+              </div>
+              <div className={styles.techIcons}>
+                <img
+                  src={getImageUrl("techStack/nodejs-original.svg")}
+                  alt="nodejs"
+                />
+                <p>Node.js</p>
+              </div>
+              <div className={styles.techIcons}>
+                <img
+                  src={getImageUrl("techStack/git-original.svg")}
+                  alt="git"
+                />
+                <p>Git</p>
+              </div>
+              <div className={styles.techIcons}>
+                <img
+                  src={getImageUrl("techStack/figma-original.svg")}
+                  alt="figma"
+                />
+                <p>Figma</p>
+              </div>
+              <div className={styles.techIcons}>
+                <img
+                  src={getImageUrl("techStack/vercel-original.svg")}
+                  alt="vercel"
+                />
+                <p>Vercel</p>
+              </div>
             </div>
           </div>
           <div className={styles.buttonSm}>

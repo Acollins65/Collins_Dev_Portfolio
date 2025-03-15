@@ -80,45 +80,44 @@
 }
 
 .techStack {
+  margin-top: 4px;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap;
   max-width: 95%;
   /* background-color: yellow; */
 }
 .techIcons {
-  width: 60px;
-  height: 70px;
+  width: 70px;
+  height: 80px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  background-color: red;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.techIcons:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.techIcons img {
+  width: 40px;
+  height: 40px;
+}
+
+.techIcons p {
+  font-size: 0.875rem;
+  text-align: center;
+  margin: 0;
 }
 
 @media screen and (max-width: 1000px) {
-  /* .contentDetails {
-    flex-direction: column;
-    gap: 40px;
-  }
-  .writing {
-    width: 100%;
-  }
-
-  .tech {
-    background-color: blue;
-    width: 45%;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .buttonSm {
-    display: flex;
-    gap: 10px;
-  }
-
-  .buttons {
-    display: none;
-  } */
 }
 
 @media screen and (max-width: 768px) {
@@ -134,7 +133,6 @@
 
   .writing {
     max-width: 100%;
-    padding: 0 20px;
   }
 
   .tech {
@@ -169,7 +167,7 @@
   }
 
   .writing p {
-    font-size: rem;
+    font-size: 1rem;
     text-align: center;
   }
 
