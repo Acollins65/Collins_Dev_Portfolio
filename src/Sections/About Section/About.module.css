@@ -75,6 +75,7 @@
   display: flex;
   gap: 20px;
 }
+
 .buttonSm {
   display: none;
 }

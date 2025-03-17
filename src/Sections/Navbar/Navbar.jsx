@@ -14,9 +14,7 @@ export const Navbar = () => {
         </a>
         <div className={styles.menu}>
           <ul
-            className={`${styles.menuItems} ${
-              menuOpen && styles.menuItemsSmall
-            }`}
+            className={`${styles.menuItems} ${menuOpen && styles.menuItemsSmall}`}
             onClick={() => setMenuOpen(false)}
           >
             <li>
