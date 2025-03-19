@@ -1,9 +1,8 @@
 import React from "react";
 import styles from "./ProjectSection.module.css";
 import { ButtonTransfer } from "../../Components/ButtonTransfer/ButtonTransfer";
-import { ProjectCardPhone } from "../../Components/ProjectCard-phone/ProjectCardPhone";
-import { ProjectCardDesktop } from "../../Components/ProjectCard-Desktop/ProjectCardDesktop";
-
+import { ProjectCardPhone } from "../../Components/ProjectCardPhone/ProjectCardPhone";
+import { ProjectCardDesktop } from "../../Components/ProjectCardDesktop/ProjectCardDesktop";
 export const ProjectSection = () => {
   return (
     <div className={styles.container}>
