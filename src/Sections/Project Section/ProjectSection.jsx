@@ -11,7 +11,7 @@ export const ProjectSection = () => {
           <h4>Some of my featured Projects</h4>
         </div>
         <div className={styles.body}>
-          <ProjectCard />
+          <ProjectCard title="this si the heqding" />
           <ProjectCard />
         </div>
         <div className={styles.bottom}>

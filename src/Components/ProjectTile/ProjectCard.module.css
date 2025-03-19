@@ -37,19 +37,20 @@ img {
 
 .image {
   width: 70%;
-  height: 50px;
+  height: 100%;
   background-color: #4567b7;
 }
 
 .writing {
   width: 100%;
-  height: 50px;
+  height: 100%;
   background-color: #6495ed;
 }
 
 @media screen and (max-width: 1000px) {
   .projectCard {
     height: 350px;
+    width: 100%;
   }
 }
 

@@ -11,7 +11,11 @@ export const ProjectCard = ({ title, description, technologies }) => {
       </div>
       <div className={styles.contentRow}>
         <div className={styles.image}>hello</div>
-        <div className={styles.writing}>hey</div>
+        <div className={styles.writing}>
+          <h2>{title}</h2>
+          <p>{description}</p>
+          <div className={styles.techStack}>Git Framer Wordpress</div>
+        </div>
       </div>
     </div>
   );
