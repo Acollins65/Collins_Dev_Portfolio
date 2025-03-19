@@ -83,7 +83,7 @@
 .techStack {
   margin-top: 4px;
   display: flex;
-  gap: 60px;
+  gap: 20px;
   flex-wrap: wrap;
   max-width: 95%;
   justify-content: flex-end;
