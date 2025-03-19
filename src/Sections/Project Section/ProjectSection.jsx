@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./ProjectSection.module.css";
 import { ButtonTransfer } from "../../Components/ButtonTransfer/ButtonTransfer";
-import { ProjectCard } from "../../Components/ProjectTile/ProjectCard";
+import { ProjectCardPhone } from "../../Components/ProjectCard-phone/ProjectCardPhone";
+import { ProjectCardDesktop } from "../../Components/ProjectCard-Desktop/ProjectCardDesktop";
 
 export const ProjectSection = () => {
   return (
@@ -11,8 +12,8 @@ export const ProjectSection = () => {
           <h4>Some of my featured Projects</h4>
         </div>
         <div className={styles.body}>
-          <ProjectCard title="this si the heqding" />
-          <ProjectCard />
+          <ProjectCardPhone />
+          <ProjectCardDesktop />
         </div>
         <div className={styles.bottom}>
           <div className={styles.buttonSm}>

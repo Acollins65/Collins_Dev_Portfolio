@@ -31,6 +31,6 @@
 
 @media (max-width: 768px) {
   .button {
-    font-size: var(--font-size-body-sm);
+    font-size: 0.875rem;
   }
 }

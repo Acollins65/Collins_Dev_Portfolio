@@ -32,4 +32,5 @@
 
   --border-radius: 4rem;
   --border-style: 1px solid var(--color-text-border);
+  --border-style2: 1px solid rgba(255, 255, 255, 0.116);
 }
