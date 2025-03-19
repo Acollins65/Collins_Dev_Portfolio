@@ -1,7 +1,7 @@
 @import "../../vars.css";
 
 .projectCard {
-  background-color: rgba(245, 245, 245, 0.038);
+  background-color: --color-background-secondary;
   width: 900px;
   height: 400px;
   border-radius: 10px;

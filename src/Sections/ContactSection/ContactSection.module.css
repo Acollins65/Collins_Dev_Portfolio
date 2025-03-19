@@ -1,0 +1,143 @@
+@import "../../vars.css";
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.content {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.head {
+  margin-bottom: 1rem;
+}
+
+.head h4 {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 40px;
+  width: 100%;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.formGroup label {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: var(--border-style2);
+  border-radius: 4px;
+  background-color: var(--color-background-secondary);
+  color: #fff;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: #888;
+}
+
+.textarea {
+  height: 150px;
+  resize: none;
+}
+
+.submitButton {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+.contact {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 10px;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.contact div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.contact img {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+
+.contact .profile {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.contact .profile span:nth-child(1) {
+  font-size: var(--font-size-body-md);
+  color: white;
+}
+
+.contact .profile span:nth-child(2) {
+  font-size: var(--font-size-body-sm);
+  color: var(--color-text-secondary);
+}
+
+@media screen and (max-width: 1000px) {
+}
+
+@media screen and (max-width: 768px) {
+  .body {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 500px) {
+}

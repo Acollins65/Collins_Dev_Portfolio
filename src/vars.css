@@ -1,9 +1,10 @@
 :root {
   /* Colours */
   --color-text-primary: #feffe3;
-  --color-text-secondary: #989d95;
+  --color-text-secondary: rgba(255, 255, 255, 0.5);
   --color-background: #04152d;
   --color-text-border: rgba(255, 255, 255, 0.481);
+  --color-background-secondary: rgba(245, 245, 245, 0.038);
 
   /* Fonts weight */
   --font-weight-light: 300;
@@ -24,7 +25,7 @@
   --font-size-h3-sm: 1.25rem;
   --font-size-body: 1.25rem;
   --font-size-body-md: 1rem;
-  --font-size-body-sm: 1rem;
+  --font-size-body-sm: 0.875rem;
 
   --nav-gap-lg: 1.25rem;
   --nav-gap-md: 1rem;
