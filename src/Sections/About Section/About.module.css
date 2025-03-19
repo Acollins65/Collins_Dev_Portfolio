@@ -83,9 +83,10 @@
 .techStack {
   margin-top: 4px;
   display: flex;
-  gap: 40px;
+  gap: 60px;
   flex-wrap: wrap;
   max-width: 95%;
+  justify-content: flex-end;
   /* background-color: yellow; */
 }
 .techIcons {
