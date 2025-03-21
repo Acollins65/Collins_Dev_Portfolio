@@ -2,7 +2,7 @@
 
 .container {
   width: 100%;
-  min-height: 90vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,6 +104,9 @@ h3 {
 }*/
 
 @media screen and (max-width: 768px) {
+  .container {
+    min-height: 70vh;
+  }
   h1 {
     font-size: 3rem;
     line-height: 2.5rem;
