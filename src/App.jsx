@@ -1,5 +1,6 @@
 import "./App.css";
 import { Navbar } from "./Sections/Navbar/Navbar";
+import { Footer } from "./Sections/Footer/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import AboutMe from "./Pages/AboutMe/AboutMe";
@@ -16,6 +17,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           {/* <Route path="*" element={<Navigate to="/" />} /> */}
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
