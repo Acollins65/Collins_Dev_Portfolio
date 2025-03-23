@@ -10,7 +10,6 @@
   padding: 0;
   margin: 0;
   overflow: hidden;
-  background-color: var(--color-background);
 }
 
 .content {
@@ -57,17 +56,17 @@ h3 {
   width: 60%;
   margin-top: 0.5rem;
 }
-.firstRow > div:nth-child(1) {
-  display: none;
-}
+
 .roundedBoarderDev {
   display: none;
 }
 .roundedBoarder {
+  color: white;
   border: var(--border-style);
   padding: 16px;
   border-radius: var(--border-radius);
   transition: shake 3s ease-in-out 0;
+  background-color: transparent;
 }
 
 .roundedBoarder:hover {
@@ -92,16 +91,12 @@ h3 {
     width: 85%;
   }
 }
-/* @media screen and (max-width: 760px) {
-  h1 {
-    font-size: 3rem;
-    line-height: 4rem;
+@media screen and (max-width: 860px) {
+  h3 {
+    font-size: 0.875rem;
+    line-height: 0.9375rem;
   }
-  .headerDetail {
-    width: 75%;
-    margin-top: 0.2rem;
-  } 
-}*/
+}
 
 @media screen and (max-width: 768px) {
   .container {
@@ -110,7 +105,7 @@ h3 {
   h1 {
     font-size: 3rem;
     line-height: 2.5rem;
-    letter-spacing: 3px;
+    letter-spacing: 0px;
   }
 
   h2 {
@@ -128,13 +123,13 @@ h3 {
     margin-top: 0.2rem;
   }
   .roundedBoarder {
-    padding: 8px 16px;
+    padding: 12px;
   }
 }
 
 @media screen and (max-width: 640px) {
   .container {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
   }
   .content {
@@ -157,39 +152,11 @@ h3 {
   h3 {
     font-size: 0.625rem;
   }
-  .firstRow > div:nth-child(1) h3 {
-    font-size: 0.875rem;
-  }
+
   .roundedBoarder {
-    padding: 12px;
-  }
-  .roundedBoarderDev {
-    display: inline;
-    border: var(--border-style);
-    padding: 12px;
-    border-radius: var(--border-radius);
-    transition: shake 3s ease-in-out 0;
-    background: transparent;
-    color: var(--color-text-primary);
+    padding: 8px;
   }
 
-  .waveEmoji {
-    font-size: 30px;
-  }
-
-  .firstRow {
-    flex-direction: column;
-    gap: 8px;
-  }
-  .firstRow > div:nth-child(1) {
-    /* margin-bottom: 4px; */
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .firstRow > div:nth-child(3) {
-    display: none;
-  }
   .secondRow > div:nth-child(1) {
     display: none;
   }

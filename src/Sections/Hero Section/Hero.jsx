@@ -6,9 +6,11 @@ export const Hero = () => {
     <section className={styles.container}>
       <div className={styles.content}>
         <div className={`${styles.contentRows} ${styles.firstRow}`}>
-          <div className={styles.wrapper}>
-            <span className={styles.waveEmoji}> 👋</span>
-            <h3 className={styles.roundedBoarder}>Hi, I'm Collins</h3>
+          <div>
+            <h3>
+              &lt;/ UI/UX Designer <br />
+              Front-End Developer /&gt;
+            </h3>
           </div>
           <div>
             <h1>User</h1>
@@ -34,7 +36,7 @@ export const Hero = () => {
           <div>
             <h1>Designer</h1>
           </div>
-          <button className={styles.roundedBoarderDev}>
+          <button className={styles.roundedBoarder}>
             <h3>Contact me</h3>
           </button>
         </div>
