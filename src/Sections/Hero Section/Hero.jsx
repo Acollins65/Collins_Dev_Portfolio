@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Hero.module.css";
-import { getImageUrl } from "../../utils";
+
 export const Hero = () => {
   return (
     <section className={styles.container}>
@@ -37,6 +37,7 @@ export const Hero = () => {
             <h1>Designer</h1>
           </div>
           <button className={styles.roundedBoarder}>
+            <div className={styles.blinkingLight}></div>
             <h3>Contact me</h3>
           </button>
         </div>
@@ -44,9 +45,10 @@ export const Hero = () => {
           <div>
             <h1> & Developer</h1>
           </div>
-          <div className={styles.roundedBoarder}>
+          <button className={styles.roundedBoarder}>
+            <div className={styles.blinkingLight}></div>
             <h3>Contact me</h3>
-          </div>
+          </button>
         </div>
         <div className={styles.contentRows}>
           <div className={styles.headerDetail}>

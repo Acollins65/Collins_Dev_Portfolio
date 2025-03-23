@@ -10,6 +10,16 @@
   padding: 0;
   margin: 0;
   overflow: hidden;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .content {
@@ -20,13 +30,38 @@
   flex-direction: column;
   gap: 8px;
   max-width: 1000px;
+  animation: slideIn 1s ease-in-out;
 }
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .contentRows {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 h1 {
@@ -36,41 +71,97 @@ h1 {
   letter-spacing: normal;
   text-transform: uppercase;
   font-family: "Inter", serif;
+  animation: textFadeIn 1s ease-in-out;
 }
+
+@keyframes textFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 h2 {
   font-size: var(--font-size-h2);
   line-height: 1.8rem;
   font-weight: var(--font-weight-regular);
   text-wrap: wrap;
   text-align: center;
+  animation: textFadeIn 1s ease-in-out;
 }
+
 h3 {
   font-size: var(--font-size-h3);
   line-height: 1.5rem;
   letter-spacing: normal;
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-light);
+  animation: textFadeIn 1s ease-in-out;
+}
+
+h3 span {
+  font-size: 20px;
+  margin-right: 8px;
 }
 
 .headerDetail {
   max-width: 700px;
   width: 60%;
   margin-top: 0.5rem;
+  animation: fadeIn 1s ease-in-out;
 }
 
-.roundedBoarderDev {
-  display: none;
-}
 .roundedBoarder {
-  color: white;
-  border: var(--border-style);
-  padding: 16px;
-  border-radius: var(--border-radius);
-  transition: shake 3s ease-in-out 0;
+  display: flex;
+  flex-direction: row;
   background-color: transparent;
+  color: white;
+  padding: 1rem;
+  border: var(--border-style);
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .roundedBoarder:hover {
-  animation: shake 3s ease-in-out infinite;
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.roundedBoarder h3 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.blinkingLight {
+  width: 12px;
+  height: 12px;
+  background-color: green;
+  border-radius: 50%;
+  animation: glow 2s infinite;
+  margin-right: 8px;
+  box-shadow: 0 0 5px green, 0 0 10px green, 0 0 15px green, 0 0 20px green;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 5px green, 0 0 10px green, 0 0 15px green, 0 0 20px green;
+  }
+  50% {
+    opacity: 0.5;
+    box-shadow: 0 0 2px green, 0 0 5px green, 0 0 10px green, 0 0 15px green;
+  }
+}
+
+.firstRow > div:nth-child(1) {
+  display: none;
 }
 
 .roundedBoarder:not(:hover) {
@@ -78,8 +169,8 @@ h3 {
   /* This will let the animation complete one more cycle */
 }
 
-.roundedBoarder h3 {
-  margin: 0;
+.secondRow button {
+  display: none;
 }
 
 @media screen and (max-width: 1000px) {
@@ -103,9 +194,9 @@ h3 {
     min-height: 70vh;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     line-height: 2.5rem;
-    letter-spacing: 0px;
+    letter-spacing: -1px;
   }
 
   h2 {
@@ -123,7 +214,13 @@ h3 {
     margin-top: 0.2rem;
   }
   .roundedBoarder {
-    padding: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+  }
+  h3 span {
+    font-size: 16px;
+    margin-right: 8px;
   }
 }
 
@@ -141,10 +238,10 @@ h3 {
     margin-top: 0.2rem;
   }
 
-  .contentRows {
-    gap: 4px;
+  h1 {
+    font-size: 3rem;
+    line-height: 2.5rem;
   }
-
   h2 {
     font-size: 1rem;
     line-height: 1.2rem;
@@ -153,14 +250,31 @@ h3 {
     font-size: 0.625rem;
   }
 
+  .blinkingLight {
+    width: 8px;
+    height: 8px;
+  }
+  .secondRow .roundedBoarder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
   .roundedBoarder {
-    padding: 8px;
+    padding: 12px;
+  }
+  .firstRow > div:nth-child(1) {
+    display: block;
   }
 
   .secondRow > div:nth-child(1) {
     display: none;
   }
-  .thirdRow > div:nth-child(2) {
+  .secondRow button {
+    display: block;
+  }
+  .thirdRow button {
     display: none;
   }
 }

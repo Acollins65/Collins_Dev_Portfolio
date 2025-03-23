@@ -14,7 +14,9 @@ export const Navbar = () => {
         </a>
         <div className={styles.menu}>
           <ul
-            className={`${styles.menuItems} ${menuOpen && styles.menuItemsSmall}`}
+            className={`${styles.menuItems} ${
+              menuOpen && styles.menuItemsSmall
+            }`}
             onClick={() => setMenuOpen(false)}
           >
             <li>
@@ -42,7 +44,7 @@ export const Navbar = () => {
             </li> */}
             {menuOpen && (
               <div className={styles.mobileIcons}>
-                <a href="mailto:your-email@example.com">
+                <a href="mailto:alfredcollins65@gmail.com">
                   <img
                     src={getImageUrl("nav/socialIcons/mail.svg")}
                     alt="email"
