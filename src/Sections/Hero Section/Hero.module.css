@@ -117,7 +117,7 @@ h3 span {
   flex-direction: row;
   background-color: transparent;
   color: white;
-  padding: 1rem;
+  padding: 1rem 1.25rem;
   border: var(--border-style);
   border-radius: 50px;
   cursor: pointer;

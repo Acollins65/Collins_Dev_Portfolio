@@ -65,7 +65,7 @@
 .menuItems a {
   color: var(--color-text-primary);
   font-size: var(--font-size-body);
-  font-weight: 400;
+  font-weight: var(--font-weight-light);
   line-height: 1rem;
 }
 
