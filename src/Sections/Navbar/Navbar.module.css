@@ -50,7 +50,7 @@
   justify-content: center;
   border: var(--border-style);
   border-radius: var(--border-radius);
-  padding: 16px 20px;
+  padding: 16px 24px;
 }
 
 .socialIcons {
